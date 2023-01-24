@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Compra laptop</title>
+</head>
+<body>
+    <div class="card-container">
+        <div class="card1">
+            <div class="img-container">
+                <img src="./assets/img/laptop.png" id="laptop" alt="">
+            </div>
+            <h1>Laptop gamer AMD</h1>
+            <input type="text" type="number" min="1" id="cantidadInput" placeholder="Cantidad">
+            <input type="text" type="text" id="colorInput" placeholder="Color">
+            <div class="precio-container">
+                <p id="precio">Precio: $</p><p id="unidad">650.000</p>
+            </div>
+            <button id="calcular" onclick="calculoTotal()">Calcular Total</button>
+        </div>
+        <div class="card2-wrap">
+            <div class="card2">
+                <p id="resTotal">Total: $0</p>
+                <p id="resCantidad">Cantidad: 0</p>
+                <p class="restexto">Color: <div id="circulo"></div></p>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
